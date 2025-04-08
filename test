@@ -1,0 +1,16 @@
+#!/bin/sh
+# Test Script for cdes
+# Chris K Cockrum
+
+./cdes e intest outtest keytest
+./cdes d outtest plaintest keytest
+
+echo
+echo Input:
+more intest
+echo
+echo "Omitting Ciphertext (May give display problems)"
+echo 
+echo Output:
+more plaintest
+echo
